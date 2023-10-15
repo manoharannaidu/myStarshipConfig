@@ -27,6 +27,45 @@ vim.opt.rtp:prepend(lazypath)
 --    as they will be available in your neovim runtime.
 require('lazy').setup({
 
+{
+	-- Autocompletion
+    	'hrsh7th/nvim-cmp',
+    	dependencies = {
+      		-- Snippet Engine & its associated nvim-cmp source
+      		'L3MON4D3/LuaSnip',
+      		'saadparwaiz1/cmp_luasnip',
+
+      		-- Adds LSP completion capabilities
+      		'hrsh7th/cmp-nvim-lsp',
+
+      		-- Adds a number of user-friendly snippets
+      		'rafamadriz/friendly-snippets',
+    },
+},
+
+{
+	-- Set lualine as statusline
+    	'nvim-lualine/lualine.nvim',
+    	-- See `:help lualine.txt`
+    	opts = {
+      		options = {
+        		icons_enabled = false,
+        		theme = 'kanagawa',
+        		component_separators = '|',
+        		section_separators = '',
+      		},
+    	},
+},
+
+{
+	-- Add indentation guides even on blank lines
+    	'lukas-reineke/indent-blankline.nvim',
+    	-- Enable `lukas-reineke/indent-blankline.nvim`
+    	-- See `:help ibl`
+    	main = 'ibl',
+    	opts = {},
+},
+
 -- Fuzzy Finder (files, lsp, etc)
 {
 	'nvim-telescope/telescope.nvim',
@@ -68,6 +107,7 @@ require('lazy').setup({
 
 })
 
+
 -- Load treesitter
 require('nvim-treesitter.configs').setup ({
 	-- Add languages to be installed here that you want installed for treesitter
@@ -91,5 +131,3 @@ vim.keymap.set('n', '<leader>gf', require('telescope.builtin').git_files, { desc
 vim.keymap.set('n', '<leader>sf', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
 vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
 vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })
-
-
