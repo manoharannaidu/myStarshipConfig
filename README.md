@@ -15,6 +15,9 @@ Things I use to customize my terminal and Nvim to feel more a coder ;P
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
+      <ul>
+        <li><a href="#screenshots">Screenshots</a></li>
+      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -35,6 +38,17 @@ I use Ligaturized Nerd Font, Clink for a smarter terminal, Starship for lua base
 * Ligaturized Hack Nerd Font
 * CMD (Windows Terminal :0)
 * NVIM
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Screenshots
+
+<div align="center">
+  <img src="screenshots/fileTreeThemeGutter.png" alt="fileTreeThemeGutter" width="1000" height="600">
+  <img src="screenshots/syntaxHighlightingAutoCompletePythonLSP.png" alt="syntaxHighlightingAutoCompletePythonLSP" width="1000" height="600">
+  <img src="screenshots/telescopeTransparentBasicVim.png" alt="telescopeTransparentBasicVim" width="1000" height="600">
+  <img src="screenshots/welcomePage.png" alt="welcomePage" width="1000" height="600">
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
