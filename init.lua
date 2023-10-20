@@ -1,5 +1,7 @@
 -- Greetings!!
-print("<=< Once you start down the dark path, forever will it dominate your destiny. Consume you, it will. >=>")
+print("                              <=< Once you start down the dark path, forever will it dominate your destiny. Consume you, it will. >=>")
+print(" ")
+print(" ")
 
 -- Personalization
 require("manonaid")
